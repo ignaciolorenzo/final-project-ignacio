@@ -25,7 +25,7 @@ In this project we scrape website data from a relevant spanish Real Estate direc
 
 ### 1.1.1. Available information in the dataset:
 Categoricals:
-- neighborhood (self explanatory)
+- neighborhood (self explanatory) -- Only to be used in the model for big cities, more info in the model section.
 - geo_town: city or town
 - province (self explanatory)
 - ccaa: Autonomous Community (simmilar to a state).
@@ -55,5 +55,8 @@ The data cleaning of the data we work with includes:
 ## 1.2. Geographical data:
 To get accurate geographical data we combine information from CCAA, provinces and towns gathered from the spanish statistics national institute, INE (https://www.ine.es/daco/daco42/codmun/cod_ccaa_provincia.htm).
 
-Then, we merge it with the towns that have properties listed in the RE website.
+Then, we merge it with the towns that have properties listed in the RE website and we will use it for the web scraping.
+
+# 2. Model:
+
 
