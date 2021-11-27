@@ -89,4 +89,16 @@ Big cities' best model (RandomForestRegressor()):
 
 ![big-joinplot-rf](https://user-images.githubusercontent.com/80812996/143690193-bb7fe3e9-6127-40cd-aa84-7369344e445e.png)
 
+### 2.3. Analysing relevant features:
+
+First of all, let's take a look at the correlations:
+
+![Screenshot 2021-11-27 at 18 00 59](https://user-images.githubusercontent.com/80812996/143690285-602d3c2d-5cbf-4431-a012-706de3005c12.png)
+
+We don't see any features whith excessive correlation so we are good to keep all our features.
+
+When it comes to the most relevant data, according to our regressor models we have the following *importances*:
+
+![Screenshot 2021-11-27 at 18 02 38](https://user-images.githubusercontent.com/80812996/143690337-7f60bcaf-42b0-4e14-8df3-80c8e10f1e9a.png)
+
 
