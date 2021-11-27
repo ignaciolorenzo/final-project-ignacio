@@ -103,9 +103,23 @@ When it comes to the most relevant data, according to our regressor models we ha
 
 ## 3. Making predictions:
 Now that we have the models, we need tu fit them to the dataset of properties for sale so as to predict the rent prices of properties listed for sale and then calculate their profitabilities.
-
+### 3.1. Fitting the model:
 When we try to fit the dataset of properties for sale to the model after cleaning it and encoding it we come up with an error: the shape that the model requires != the shape of the dataset of properties for sale. Why? Because the number of distinct categorical values in both dataframes (properties for rent and for sale) is different; therefore, when we encode them, we get dfs with different shapes.
 
 The solution I've come up with is to merge the dataset of properties for sale and for rent, cleaning it, encoding it and then slicing it. This way we get the two dfs but with the same amount of columns. To test if this is a good procedure, the results of the model for the prediction of rent prices is the same in both cases, if we merge both dfs or if we don't, as done in step 2.
 
+### 3.2. From rent predictions to ROI:
+After having predicted the rent price for each property listed for sale, we apply the following formula so as to get the gross ROI that each property would have annually:
+
+ROI = (Prediction * 12) / Price
+Prediction: predicted monthly rent price by the best performing model.
+Price: Price of sale which the property is listed at.
+
+## 4. Calculating rent scarcity ratio:
+Another relevant aspect to be considered when investing is whether if the town in which you are going to buy a property has many properties for rent or not. It will give you negotiation power when renting your property thus improve your ROI.
+
+To get this information we claculate the # of propertes for rent and for sale in each town or city and we calculate the following ratio:
+Rent density = # Properties for rent / # Properties for sale
+
+The lower the ratio, the more scarcity there is for properties for rent and better ROI you will be able to obtain.
 
