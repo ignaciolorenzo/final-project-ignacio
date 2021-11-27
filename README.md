@@ -57,7 +57,7 @@ To get accurate geographical data we combine information from CCAA, provinces an
 
 Then, we merge it with the towns that have properties listed in the RE website and we will use it for the web scraping.
 
-## 2. Model:
+## 2. Building the model:
 Since we have a very inbalanced dataset when it comes to the # of properties each town has, the best solution is to work with two models, each with its respective dataset:
 
 ![82228A11-CCB9-4F13-A4B8-51D4D9F6B332_1_201_a](https://user-images.githubusercontent.com/80812996/143689674-c2e050c6-7c8e-4d8f-8f75-dc06c0865c8c.jpeg)
@@ -100,5 +100,12 @@ We don't see any features whith excessive correlation so we are good to keep all
 When it comes to the most relevant data, according to our regressor models we have the following *importances*:
 
 ![Screenshot 2021-11-27 at 18 02 38](https://user-images.githubusercontent.com/80812996/143690337-7f60bcaf-42b0-4e14-8df3-80c8e10f1e9a.png)
+
+## 3. Making predictions:
+Now that we have the models, we need tu fit them to the dataset of properties for sale so as to predict the rent prices of properties listed for sale and then calculate their profitabilities.
+
+When we try to fit the dataset of properties for sale to the model after cleaning it and encoding it we come up with an error: the shape that the model requires != the shape of the dataset of properties for sale. Why? Because the number of distinct categorical values in both dataframes (properties for rent and for sale) is different; therefore, when we encode them, we get dfs with different shapes.
+
+The solution I've come up with is to merge the dataset of properties for sale and for rent, cleaning it, encoding it and then slicing it. This way we get the two dfs but with the same amount of columns. To test if this is a good procedure, the results of the model for the prediction of rent prices is the same in both cases, if we merge both dfs or if we don't, as done in step 2.
 
 
