@@ -26,6 +26,10 @@ In this project we scrape website data from a relevant spanish Real Estate direc
 ### 1.1.1. Relevant aspects of how the data is gathered:
 Properties are extracted from the RE website. Not all properties have all the features that the model is trained on, so the dataset size is sacrified for the sake of improving the information we have about each property. Properties with insufficient information are excluded from the dataset which trains the model.
 
+Also, a feature is generated to improve our model: 'hood_price_m2'. We calculate the average price per sqm for each neighborhood, a feature which will help us predict rent prices.
+
+### 1.1.2. Data cleaning:
+
 ## 1.2. Geographical data:
 To get accurate geographical data we combine information from CCAA, provinces and towns gathered from the spanish statistics national institute, INE (https://www.ine.es/daco/daco42/codmun/cod_ccaa_provincia.htm).
 
