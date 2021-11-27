@@ -123,3 +123,15 @@ Rent density = # Properties for rent / # Properties for sale
 
 The lower the ratio, the more scarcity there is for properties for rent and better ROI you will be able to obtain.
 
+<img width="1077" alt="Screenshot 2021-11-27 at 18 23 30" src="https://user-images.githubusercontent.com/80812996/143690914-d2116172-e0a2-4160-a66c-44b23841b6ed.png">
+
+## 5. Conclusions
+From the results of the predictions, we can conclude:
+- The accuracy of the model is good enough to make predictions with an average error we can tolerate.
+- Properties under 75k in small cities with a low density ratio are likely to be the most profitable ones.
+
+As next steps, I want to:
+- Analyze correlations between predicted profitabilities and the rent density ratio.
+- Make the model more user friendly via streamlit.
+- Gather more features for each property to improve the models.
+- Add Google Search trends data to detect towns with raising popularity.
