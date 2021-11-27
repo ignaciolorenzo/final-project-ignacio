@@ -57,6 +57,8 @@ To get accurate geographical data we combine information from CCAA, provinces an
 
 Then, we merge it with the towns that have properties listed in the RE website and we will use it for the web scraping.
 
-# 2. Model:
-
+## 2. Model:
+Since we have a very inbalanced dataset when it comes to the # of properties each town has, the best solution is to work with two models:
+- Model for big cities:
+- Model for small cities:
 
