@@ -58,10 +58,14 @@ To get accurate geographical data we combine information from CCAA, provinces an
 Then, we merge it with the towns that have properties listed in the RE website and we will use it for the web scraping.
 
 ## 2. Model:
-Since we have a very inbalanced dataset when it comes to the # of properties each town has, the best solution is to work with two models:
+Since we have a very inbalanced dataset when it comes to the # of properties each town has, the best solution is to work with two models, each with its respective dataset:
 
 ![82228A11-CCB9-4F13-A4B8-51D4D9F6B332_1_201_a](https://user-images.githubusercontent.com/80812996/143689674-c2e050c6-7c8e-4d8f-8f75-dc06c0865c8c.jpeg)
 
 - Model for big cities: filter: city that has > 50% of the properties of the dataset.
 - Model for small cities
 
+### 2.1. Additional data cleaning & preparation:
+- **Removing outliers to numerical columns**. We haven't done it before because we want to remove the outliers of small and big cities' datasets separately.
+- **Encoding categoricals:** So we can fit the data into the models.
+- **Normalizing numericals:** To improve the model performance.
