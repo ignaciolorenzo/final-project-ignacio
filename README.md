@@ -80,6 +80,13 @@ Combined with GridSearchCV to find the best possible models, which delivers the 
 ![Screenshot 2021-11-27 at 17 54 44](https://user-images.githubusercontent.com/80812996/143690078-5bf6d67b-359f-4eaf-8cb2-69694b38b630.png)
 
 Which can be visualized so we further understand what's going on behind the scenes:
-![Screenshot 2021-11-27 at 17 57 08](https://user-images.githubusercontent.com/80812996/143690137-783bebc2-acd7-4891-bcd7-1a101ba819b6.png)
-![Screenshot 2021-11-27 at 17 57 25](https://user-images.githubusercontent.com/80812996/143690151-b9e4e757-a185-4931-ac94-411a0e417fc9.png)
+
+Small cities' best model (LinearRegression()):
+
+![small-cities-linreg-jointplot](https://user-images.githubusercontent.com/80812996/143690185-a1adcbee-aa95-4383-aab6-9ff336dba564.png)
+
+Big cities' best model (RandomForestRegressor()):
+
+![big-joinplot-rf](https://user-images.githubusercontent.com/80812996/143690193-bb7fe3e9-6127-40cd-aa84-7369344e445e.png)
+
 
