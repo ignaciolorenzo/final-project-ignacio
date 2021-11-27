@@ -39,8 +39,7 @@ Numericals:
 - n_rooms: # of rooms each property has.
 - last_update: # of days since the listing was last updated.
 
-
-Target variable: 
+Target variable: rent price.
 
 ### 1.1.2. Relevant aspects of how the data is gathered:
 Properties are extracted from the RE website. Not all properties have all the features that the model is trained on, so the dataset size is sacrified for the sake of improving the information we have about each property. Properties with insufficient information are excluded from the dataset which trains the model.
