@@ -24,7 +24,7 @@ In this project we scrape website data from a relevant spanish Real Estate direc
 - For sale data: we will predict the rent price for properties for sale to then calculate the predicted profitabilities.
 
 ### 1.1.1. Relevant aspects of how the data is gathered:
-Properties are extracted from the RE website. Not all properties have all the features that the model is trained on, so the dataset size is sacrified for the sake of improving the information we have about each property.
+Properties are extracted from the RE website. Not all properties have all the features that the model is trained on, so the dataset size is sacrified for the sake of improving the information we have about each property. Properties with insufficient information are excluded from the dataset which trains the model.
 
 ## 1.2. Geographical data:
 To get accurate geographical data we combine information from CCAA, provinces and towns gathered from the spanish statistics national institute, INE (https://www.ine.es/daco/daco42/codmun/cod_ccaa_provincia.htm).
