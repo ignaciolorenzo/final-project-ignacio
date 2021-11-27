@@ -69,3 +69,13 @@ Since we have a very inbalanced dataset when it comes to the # of properties eac
 - **Removing outliers to numerical columns**. We haven't done it before because we want to remove the outliers of small and big cities' datasets separately.
 - **Encoding categoricals:** So we can fit the data into the models.
 - **Normalizing numericals:** To improve the model performance.
+
+### 2.2. Finding the best algorithm for both models:
+Algorithms used in this model:
+- LinearRegression()
+- RandomForestRegressor()
+
+Combined with GridSearchCV to find the best possible models, which delivers the following results:
+
+![Screenshot 2021-11-27 at 17 54 44](https://user-images.githubusercontent.com/80812996/143690078-5bf6d67b-359f-4eaf-8cb2-69694b38b630.png)
+
