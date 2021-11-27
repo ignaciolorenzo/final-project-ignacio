@@ -52,7 +52,7 @@ The data cleaning of the data we work with includes:
 - Replacing nulls if possible or droping rows with null values if they are not replaceable.
 - Converting object columns to numericals for those cases in which the import reads values as dtypes other than ints.
 
-## 1.2. Geographical data:
+### 1.2. Geographical data:
 To get accurate geographical data we combine information from CCAA, provinces and towns gathered from the spanish statistics national institute, INE (https://www.ine.es/daco/daco42/codmun/cod_ccaa_provincia.htm).
 
 Then, we merge it with the towns that have properties listed in the RE website and we will use it for the web scraping.
