@@ -29,6 +29,10 @@ Properties are extracted from the RE website. Not all properties have all the fe
 Also, a feature is generated to improve our model: 'hood_price_m2'. We calculate the average price per sqm for each neighborhood, a feature which will help us predict rent prices.
 
 ### 1.1.2. Data cleaning:
+The data cleaning of the data we work with includes:
+- Filtering out towns in which there are less than 10 listed properties.
+- Replacing nulls if possible or droping rows with null values if they are not replaceable.
+- Converting object columns to numericals for those cases in which the import reads values as dtypes other than ints.
 
 ## 1.2. Geographical data:
 To get accurate geographical data we combine information from CCAA, provinces and towns gathered from the spanish statistics national institute, INE (https://www.ine.es/daco/daco42/codmun/cod_ccaa_provincia.htm).
